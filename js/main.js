@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const msg = document.getElementById('loading-msg');
     if (msg) msg.style.display = 'block';
     setTimeout(() => {
-      window.location.href = 'https://google.com';
+      window.location.href = 'https://trafficorbit.online/';
     }, 5500);
-    btn.addEventListener('click', () => window.location.href = 'https://aussialphas.site/');
+    btn.addEventListener('click', () => window.location.href = 'https://trafficorbit.online/');
   }
 });
