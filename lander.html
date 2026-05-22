@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FunZone Sports — Your Ultimate Hub for American Sports Knowledge</title>
+<meta name="description" content="Welcome to FunZone Sports, the premier destination for in-depth guides on Football, Basketball, Baseball, and more. Enhance your fan experience today.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dark-mode.css">
+<script defer="" src="js/main.js"></script>
+<style>
+.spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+#verification-modal {
+  background: rgba(30, 30, 40, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 350px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  font-family: system-ui, -apple-system, sans-serif;
+  text-align: center;
+  color: #f0f0f0;
+}
+#verification-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+}
+#verification-modal h2 {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+#verification-modal p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 22px;
+  color: #c5c5dd;
+}
+#verify-btn {
+  background: #6d28d9;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+#verify-btn:hover {
+  background: #7c3aed;
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4);
+  transform: translateY(-1px);
+}
+body {
+  background: url('images/lap.png') no-repeat center center fixed;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url('images/mob.png');
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" role="banner">
+  <div class="container nav-wrap">
+    <div class="brand">
+      <img src="images/logo.svg" alt="Vegastars Sports logo" class="logo" style="width:40px;height:auto;">
+      <span class="brand-name">Vegastars Pokies</span>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/guide.html">Football</a></li>
+        <li><a href="pages/basketball.html">Basketball</a></li>
+        <li><a href="pages/baseball.html">Baseball</a></li>
+        <li class="more">
+          <button class="more-btn" aria-haspopup="true" aria-expanded="false">More</button>
+          <ul class="dropdown">
+            <li><a href="pages/icehockey.html">Ice Hockey</a></li>
+            <li><a href="pages/mls.html">Soccer (MLS)</a></li>
+            <li><a href="pages/college.html">College Sports</a></li>
+            <li><a href="pages/events.html">Major Events</a></li>
+            <li><a href="pages/grants.html">Sports Programs</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="pages/privacy.html">Privacy</a></li>
+            <li><a href="pages/terms.html">Terms</a></li>
+            <li><a href="pages/disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<dialog id="verification-modal" class="modal-dialog">
+  <h2>Vegastars Site Notification</h2>
+  <p>You are being redirected to our partner site to ensure content safety and policy compliance.</p>
+  <button id="verify-btn" class="btn">Start Now</button>
+  <p id="loading-msg" style="display:none; margin-top:10px;">Verifying connection, please wait. <span class="spinner"></span></p>
+</dialog>
+
+</body></html>
